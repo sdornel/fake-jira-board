@@ -1,0 +1,8 @@
+<div class="column-div">
+  <span>column #{{ column }}</span>
+  <div *ngFor="let boxNum of columnBoxes" >
+    <button (click)="moveItem('back', boxNum, column)">back</button>
+    <span>box #{{ boxNum }}</span>
+    <button (click)="moveItem('forward', boxNum, column)">forward</button>
+  </div>
+</div>
